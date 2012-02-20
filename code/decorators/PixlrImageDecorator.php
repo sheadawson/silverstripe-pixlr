@@ -120,7 +120,7 @@ class PixlrImageDecorator extends DataObjectDecorator
 		$iterator = new ArrayIterator($files);
 		$filter   = new RegexIterator (
 			$iterator,
-			sprintf("/([a-zA-Z]+)([0-9]*)-%s/", preg_quote($this->owner->Name)),
+			sprintf("/([a-zA-Z]+)([0-9]*)-%s/", preg_quote($this->owner->Name)), 
 			RegexIterator::GET_MATCH
 		);
 
